@@ -1,0 +1,101 @@
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Squirrels in Scotland</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+  <!-- Mapbox JS API !-->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <!-- Mapbox CSS!-->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- Google Fonts !-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Chart.js !-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</head>
+
+<body>
+  <!-- Map Container !-->
+  <div id='map'></div>
+
+  <!-- Title and Control Box !-->
+  <div class="map-overlay" id='console'>
+    <h1>Squirrels in Scotland</h1>
+    <p>Data: <a href='https://registry.nbnatlas.org/public/show/dr949/'>The Scottish Squirrel Database </a> </p>
+
+    <!-- Slider !-->
+    <div class='session' id='sliderbar'>
+      <h2>Year: <label id='active-year'>2021</label></h2>
+      <input id='slider' class='row' type='range' min='2000' max='2021' step='1' value='2021' />
+    </div>
+
+    <!-- Radio buttons !-->
+
+    <div class='session'>
+      <h2>Squirrel Species</h2>
+      <div class='row' id='filters'>
+        <input id='all' type='radio' name='toggle' value='all' checked='checked'>
+        <label for='all'>All</label>
+        <input id='Eurasian Red Squirrel' type='radio' name='toggle' value='Eurasian Red Squirrel'>
+        <label for='Eurasian Red Squirrel'>Red Squirrel</label>
+        <input id='Eastern Grey Squirrel' type='radio' name='toggle' value='Eastern Grey Squirrel'>
+        <label for='Eastern Grey Squirrel'>Grey Squirrel</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chart !-->
+
+  <div class="map-overlay" id="chart">
+    <canvas id="myChart">
+    </canvas>
+  </div>
+
+  <!-- About Button !-->
+  <button type="button" class="about-button map-overlay">
+    <h2>About</h2>
+  </button>
+  <div class="toggle">
+    <div class="map-overlay" id="about">
+      <div>
+        <p>The Scottish Squirrel Database contains sightings of red and grey squirrels between 2000 and 2021 </p>
+        <p>Earlier years contain limited data, so trends are somewhat misleading before around 2015 </p>
+        <h4> Instructions for Use</h4>
+        <p> Filter by year and species using the slider and buttons above </p>
+        <p>Hover to view a charts of squirrel records for the selected 10km Grid squares </p>
+        <p>Zoom in to see individual sightings </p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Legend with collapsable button!-->
+
+  <button type="button" class="legend-button map-overlay">
+    <h2>Legend</h2>
+  </button>
+  <div class="toggle">
+    <div class="map-overlay" id="legend">
+      <div>
+        <h3>more grey squirrels &#8594;</h3>
+      </div>
+    </div>
+
+    <div class="map-overlay" id="vertical">
+      <div>
+        <h3>more red squirrels &#8594;</h3>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
