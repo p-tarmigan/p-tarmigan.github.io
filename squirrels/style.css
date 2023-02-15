@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+h1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #2dc4b2;
+}
+
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  margin-right: 20px;
+  font-family: "Open Sans", sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+#console {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.session {
+  margin-bottom: 20px;
+}
+
+.row {
+  height: 12px;
+  width: 100%;
+}
+
+#chart {
+  bottom: 10px;
+  right: 10px;
+  height: 250px;
+  width: 400px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.legend-button {
+  background-color: rgba(255, 255, 255, 0.75);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  top: 300px;
+  left: 30px;
+  height: 50px;
+  width: 165px;
+}
+
+.active,
+.legend-button:hover {
+  border-style: solid;
+  border-width: 2px;
+}
+
+#legend {
+  padding: 0px 10px 0px 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  line-height: 25px;
+  height: 185px;
+  top: 360px;
+  left: 30px;
+  width: 145px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.legend-key {
+  display: inline-block;
+  border-radius: 20%;
+  width: 18px;
+  height: 18px;
+  padding: 6px;
+}
+
+#vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  height: 220px;
+  top: 400px;
+  left: 153px;
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.toggle {
+  background-color: #e1ffc2;
+  display: none;
+  font-size: 20px;
+}
+
+.about-button {
+  background-color: rgb(255, 255, 255, 0.75);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  top: 300px;
+  left: 205px;
+  height: 50px;
+  width: 165px;
+}
+
+.active,
+.about-button:hover {
+  border-style: solid;
+  border-width: 2px;
+}
+
+#about {
+  padding: 0px 10px 0px 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  line-height: 20px;
+  height: 330px;
+  top: 20px;
+  left: 380px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+}
