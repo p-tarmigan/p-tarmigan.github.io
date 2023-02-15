@@ -18,7 +18,7 @@ const map = new mapboxgl.Map({
 
 map.on("load", () => {
   map.getCanvas().style.cursor =
-    "url(https://p-tarmigan.github.io/squirrells/squirrel.svg), auto"; // Squirrel cursor
+    "url(https://p-tarmigan.github.io/squirells/squirrel.svg), auto"; // Squirrel cursor
 
   //Add layer that changes style on hover
   map.addSource("hover", {
